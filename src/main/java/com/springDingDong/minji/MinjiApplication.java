@@ -12,25 +12,25 @@ public class MinjiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MinjiApplication.class, args);
 
-		//아메리카노&라떼 생성
-		Coffee americano = new Americano();
-		Coffee latte = new Latte(1);
-
-		//아메리카노 샷 추가
-		americano.initShot();
-		Coffee.addShot(americano);
-		Coffee.printShot(americano);
-		americano.makeCoffee();
-
-		//라떼 샷 추가
-		latte.initShot();
-		Coffee.addShot(latte);
-		Coffee.addShot(latte);
-		Coffee.addShot(latte);
-		Coffee.addShot(latte);
-		Coffee.addShot(latte);
-		Coffee.printShot(latte);
-		latte.makeCoffee();
+//		//아메리카노&라떼 생성
+//		Coffee americano = new Americano();
+//		Coffee latte = new Latte(1);
+//
+//		//아메리카노 샷 추가
+//		americano.initShot();
+//		Coffee.addShot(americano);
+//		Coffee.printShot(americano);
+//		americano.makeCoffee();
+//
+//		//라떼 샷 추가
+//		latte.initShot();
+//		Coffee.addShot(latte);
+//		Coffee.addShot(latte);
+//		Coffee.addShot(latte);
+//		Coffee.addShot(latte);
+//		Coffee.addShot(latte);
+//		Coffee.printShot(latte);
+//		latte.makeCoffee();
 
 
 	}
