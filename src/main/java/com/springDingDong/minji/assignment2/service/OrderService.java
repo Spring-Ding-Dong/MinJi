@@ -23,7 +23,6 @@ import java.util.stream.Collectors;
 public class OrderService {
     private final OrderRepository orderRepository;
     private final OrderItemRepository orderItemRepository;
-    private final CoffeeRepository coffeeRepository;
 
     // 주문 생성
     @Transactional
@@ -49,6 +48,8 @@ public class OrderService {
             OrderItemDTO orderItemDTO = new OrderItemDTO();
             orderItemDTO.setQuantity(orderItem.getQuantity());
             orderItemDTO.setCoffeeName(coffee.getName());
+            orderItemDTO.setSize(coffee.getSize());
+            orderItemDTO.setShot(coffee.getShot());
             return orderItemDTO;
         }).collect(Collectors.toList());
 
